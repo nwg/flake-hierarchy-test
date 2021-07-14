@@ -4,7 +4,7 @@
       "inputs": {
         "nix": "nix",
         "nixpkgs": [
-          "hierarchy",
+          "nixos",
           "dwarffs",
           "nix",
           "nixpkgs"
@@ -12,54 +12,45 @@
       },
       "locked": {
         "lastModified": 1611240086,
-        "narHash": "sha256-z8NmKUm7rfcAIkwtO4JZZo2KKDNQmHyExgNFRRzi1kM=",
-        "owner": "edolstra",
-        "repo": "dwarffs",
-        "rev": "f691e2c991e75edb22836f1dbe632c40324215c5",
-        "type": "github"
+        "narHash": "sha256-kKztk0DFiSZs4T/HbtdeLpU4mYTMAOL3yNHMMM2bebI=",
+        "type": "git",
+        "url": "file:///home/nwg/project/dwarffs"
       },
       "original": {
-        "owner": "edolstra",
-        "repo": "dwarffs",
-        "type": "github"
-      }
-    },
-    "hierarchy": {
-      "inputs": {
-        "blah": [
-          "hierarchy",
-          "dwarffs",
-          "nixpkgs"
-        ],
-        "dwarffs": "dwarffs",
-        "nixpkgs": "nixpkgs_2"
-      },
-      "locked": {
-        "lastModified": 1626220281,
-        "narHash": "sha256-ASZmCYchqEc9m6Ccwq9tHKOtuQPs/XQpZPCg3YmUpzA=",
-        "owner": "nwg",
-        "repo": "flake-hierarchy-test-target-1",
-        "rev": "0b26ff3fcb78c9182fe0884c2ab47cff2bf7a47f",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nwg",
-        "repo": "flake-hierarchy-test-target-1",
-        "type": "github"
+        "type": "git",
+        "url": "file:///home/nwg/project/dwarffs"
       }
     },
     "lowdown-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1598695561,
-        "narHash": "sha256-gyH/5j+h/nWw0W8AcR2WKvNBUsiQ7QuxqSJNXAwV+8E=",
+        "lastModified": 1617481909,
+        "narHash": "sha256-SqnfOFuLuVRRNeVJr1yeEPJue/qWoCp5N6o5Kr///p4=",
         "owner": "kristapsdz",
         "repo": "lowdown",
-        "rev": "1705b4a26fbf065d9574dce47a94e8c7c79e052f",
+        "rev": "148f9b2f586c41b7e36e73009db43ea68c7a1a4d",
         "type": "github"
       },
       "original": {
         "owner": "kristapsdz",
+        "ref": "VERSION_0_8_4",
+        "repo": "lowdown",
+        "type": "github"
+      }
+    },
+    "lowdown-src_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1617481909,
+        "narHash": "sha256-SqnfOFuLuVRRNeVJr1yeEPJue/qWoCp5N6o5Kr///p4=",
+        "owner": "kristapsdz",
+        "repo": "lowdown",
+        "rev": "148f9b2f586c41b7e36e73009db43ea68c7a1a4d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kristapsdz",
+        "ref": "VERSION_0_8_4",
         "repo": "lowdown",
         "type": "github"
       }
@@ -70,11 +61,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1610390819,
-        "narHash": "sha256-XE2ajw0BOtmEksRfeY5+CKN8PNlZnsMGL73sxykdQdM=",
+        "lastModified": 1626104132,
+        "narHash": "sha256-kQvfqOxwF0Vg+YP0UhJmvnUGFc5SVW+GGxSUFWoYzjs=",
         "owner": "NixOS",
         "repo": "nix",
-        "rev": "6254b1f5d298ff73127d7b0f0da48f142bdc753c",
+        "rev": "099df07e1ee1663a9176384071f61a19b0f5686c",
         "type": "github"
       },
       "original": {
@@ -82,42 +73,79 @@
         "type": "indirect"
       }
     },
+    "nix_2": {
+      "inputs": {
+        "lowdown-src": "lowdown-src_2",
+        "nixpkgs": "nixpkgs_2"
+      },
+      "locked": {
+        "lastModified": 1626211675,
+        "narHash": "sha256-4a1rH5N7IQF61QG7SoS8bYKec9X1z7IcF0f3Tcc0eHw=",
+        "owner": "NixOS",
+        "repo": "nix",
+        "rev": "bee71d692a10c9fcdc78f589945b9710f676cefb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "repo": "nix",
+        "type": "github"
+      }
+    },
+    "nixos": {
+      "inputs": {
+        "dwarffs": "dwarffs",
+        "nix": "nix_2",
+        "nixpkgs": "nixpkgs_3"
+      },
+      "locked": {
+        "lastModified": 1626220498,
+        "narHash": "sha256-f4IFFztIPZLGbSE9Rm2HS3LX4oSEQZblngKb1P5S53E=",
+        "type": "git",
+        "url": "file:///home/nwg/project/flake-hierarchy-test-target-1"
+      },
+      "original": {
+        "type": "git",
+        "url": "file:///home/nwg/project/flake-hierarchy-test-target-1"
+      }
+    },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1602702596,
-        "narHash": "sha256-fqJ4UgOb4ZUnCDIapDb4gCrtAah5Rnr2/At3IzMitig=",
+        "lastModified": 1624862269,
+        "narHash": "sha256-JFcsh2+7QtfKdJFoPibLFPLgIW6Ycnv8Bts9a7RYme0=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "ad0d20345219790533ebe06571f82ed6b034db31",
+        "rev": "f77036342e2b690c61c97202bf48f2ce13acc022",
         "type": "github"
       },
       "original": {
         "id": "nixpkgs",
-        "ref": "nixos-20.09-small",
+        "ref": "nixos-21.05-small",
         "type": "indirect"
       }
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1626220187,
-        "narHash": "sha256-QEfeU/cYq6CNdHBtU4pfXeZ6gE2rdBN7PkmHDK5Wvwk=",
+        "lastModified": 1624862269,
+        "narHash": "sha256-JFcsh2+7QtfKdJFoPibLFPLgIW6Ycnv8Bts9a7RYme0=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "fe88f6415cf542eeeb39b5c12444e78ea60d0831",
+        "rev": "f77036342e2b690c61c97202bf48f2ce13acc022",
         "type": "github"
       },
       "original": {
         "id": "nixpkgs",
+        "ref": "nixos-21.05-small",
         "type": "indirect"
       }
     },
     "nixpkgs_3": {
       "locked": {
-        "lastModified": 1626220187,
-        "narHash": "sha256-QEfeU/cYq6CNdHBtU4pfXeZ6gE2rdBN7PkmHDK5Wvwk=",
+        "lastModified": 1626220638,
+        "narHash": "sha256-dq+2kdZlPRcuGllM8o/EGNb+Xwvfui14kwKnRix8hhw=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "fe88f6415cf542eeeb39b5c12444e78ea60d0831",
+        "rev": "5fa835b33c0a2ff32f12e8f0311d788a53512cec",
         "type": "github"
       },
       "original": {
@@ -127,12 +155,7 @@
     },
     "root": {
       "inputs": {
-        "abc": [
-          "hierarchy",
-          "blah"
-        ],
-        "hierarchy": "hierarchy",
-        "nixpkgs": "nixpkgs_3"
+        "nixos": "nixos"
       }
     }
   },
